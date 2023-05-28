@@ -1,0 +1,21 @@
+﻿@model List<MvcDemo1.Models.EmployeeModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Employees Details</h2>
+<table>
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <td>@item.EmpId</td>
+            <td>@item.EmpName</td>
+            <td>@item.Salary</td>
+        </tr>
+
+    }
+</table>
+
+
+
+
